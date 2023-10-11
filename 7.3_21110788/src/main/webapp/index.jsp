@@ -8,7 +8,7 @@
 <body>
     
 <h1>CD list</h1>
-<table>
+<table class="styled-table">
     <tr>
         <th>Description</th>
         <th class="right">Price</th>
@@ -19,15 +19,15 @@
         <td class="right">$14.95</td>
         <td><form action="cart" method="post">
                 <input type="hidden" name="productCode" value="8601">
-                <input type="submit" value="Add To Cart">
-            </form><!--<a href="cart?productCode=8601">Add To Cart</a>--></td>
+                <input type="submit" value="Add To Cart" class="button">
+            </form>
     </tr>
     <tr>
         <td>Paddlefoot - The first CD</td>
         <td class="right">$12.95</td>
         <td><form action="cart" method="post">
                 <input type="hidden" name="productCode" value="pf01">
-                <input type="submit" value="Add To Cart">
+                <input type="submit" value="Add To Cart" class="button">
             </form></td>
     </tr>
     <tr>
@@ -35,7 +35,7 @@
         <td class="right">$14.95</td>
         <td><form action="cart" method="post">
                 <input type="hidden" name="productCode" value="pf02">
-                <input type="submit" value="Add To Cart">
+                <input type="submit" value="Add To Cart" class="button">
             </form></td>
     </tr>
     <tr>
@@ -43,7 +43,7 @@
         <td class="right">$14.95</td>
         <td><form action="cart" method="post">
                 <input type="hidden" name="productCode" value="jr01">
-                <input type="submit" value="Add To Cart">
+                <input type="submit" value="Add To Cart" class="button">
             </form></td>
     </tr>
 </table>

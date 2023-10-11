@@ -9,7 +9,7 @@
 
 <h1>Your cart</h1>
 
-<table>
+<table class="styled-table">
   <tr>
     <th>Quantity</th>
     <th>Description</th>
@@ -25,7 +25,7 @@
       <form action="cart" method="post">
         <input type="hidden" name="productCode" value="${item.product.code}">
         <input type=text name="quantity" value="${item.quantity}" id="quantity">
-        <input type="submit" value="Update">
+        <input type="submit" value="Update" class="button">
       </form>
     </td>
     <td>${item.product.description}</td>
@@ -33,15 +33,6 @@
     <td>${item.totalCurrencyFormat}</td>
     <td>
       <a href="cart?productCode=${item.product.code}&amp;quantity=0">Remove Item</a>
-      <!--
-      <form action="" method="post">
-        <input type="hidden" name="productCode" 
-               value="${item.product.code}">
-        <input type="hidden" name="quantity" 
-               value="0">
-        <input type="submit" value="Remove Item">
-      </form>
-      -->
     </td>
   </tr>
 </c:forEach>
@@ -52,12 +43,12 @@
   
 <form action="" method="post">
   <input type="hidden" name="action" value="shop">
-  <input type="submit" value="Continue Shopping">
+  <input type="submit" value="Continue Shopping" class="button-diff">
 </form>
 
 <form action="checkout.jsp" method="post">
   <input type="hidden" name="action" value="checkout">
-  <input type="submit" value="Checkout">
+  <input type="submit" value="Checkout" class="button-diff">
 </form>
 
 </body>
